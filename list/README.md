@@ -1,11 +1,13 @@
-# 编译
+# Book List
+
+## 编译
 
 ```bash
 python3 ./genInputs.py
 latex -pdflatex=xelatex -pdf ./note_cn.tex
 ```
 
-# 格式要求
+## 格式要求
 
 - 书籍信息填写在 **./parts** 文件夹下
 - 文件名格式： **书名-语言-作者.tex** <br/>
