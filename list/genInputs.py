@@ -1,7 +1,7 @@
 from os import listdir
 from os.path import isfile, join
 
-path2dir = "./parts"
+path2dir = "./part"
 
 if __name__ == "__main__":
 
