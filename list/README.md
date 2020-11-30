@@ -1,4 +1,4 @@
-# booklist# 编译
+# 编译
 
 ```bash
 python3 ./genInputs.py
@@ -7,7 +7,7 @@ latex -pdflatex=xelatex -pdf ./note_cn.tex
 
 # 格式要求
 
-- 书籍信息填写在 **./list/parts** 文件夹下
+- 书籍信息填写在 **./parts** 文件夹下
 - 文件名格式： **书名-语言-作者.tex**
   **只能出现中英字符和数字，其余标点符号和空格一律用“-”代替**
   **英文人名一律用英文表示，中日韩人名用中文表示**

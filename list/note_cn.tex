@@ -1,0 +1,56 @@
+% \documentclass[a4paper,10pt]{ctexart}
+\documentclass[a4paper,10pt,titlepage]{ctexart}
+% \documentclass[a4paper,10pt,twocolumn]{ctexart}
+% \documentclass[a4paper,10pt,twocolumn,titlepage]{ctexart}
+
+\usepackage[
+	top=1cm,
+	bottom=1cm,
+	left=2cm,
+	right=2cm,
+%   twoside,
+%   bindingoffset=1cm,
+%   asymmetric,
+	headheight=0.5cm,
+	headsep=0cm,
+	footskip=0.5cm,
+	includehead=true,
+	includefoot=true]{geometry}
+
+\usepackage{./lib/notes}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{xcolor}
+\pagestyle{plain}
+
+\usepackage{longtable}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Basic Info
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{}
+\author{}
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\begin{longtable}{%
+    | m{0.40\textwidth}<{\centering}
+    | m{0.20\textwidth}<{\centering}
+    | m{0.20\textwidth}<{\centering}
+    | m{0.10\textwidth}<{\centering}
+    |}
+\hline
+\textbf{Title} & \textbf{Author} & \textbf{Publisher} & \textbf{en/cn} \\
+\hline
+
+\input{./assets/files/inputs.tex}
+\end{longtable}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
