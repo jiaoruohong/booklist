@@ -10,7 +10,6 @@ if __name__ == "__main__":
     
     books.sort()
     books = [pathSplit.join([path2dir, f]) for f in books]
-    print(books)
 
     with open("./assets/files/inputs.tex", "w", encoding="utf8") as fopt:
         for f in books:
