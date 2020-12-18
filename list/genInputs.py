@@ -1,12 +1,13 @@
 from os import listdir
-from os.path import isfile, join
+from os.path import isfile
 
 path2dir = "./part"
-pathSplit="/"
+pathSplit = "/"
 
 if __name__ == "__main__":
 
-    books = [f for f in listdir(path2dir) if isfile(pathSplit.join([path2dir, f]))]
+    books = [f for f in listdir(path2dir) 
+             if (isfile(pathSplit.join([path2dir, f])) and f.endswith("tex"))]
     
     books.sort()
     books = [pathSplit.join([path2dir, f]) for f in books]
