@@ -9,7 +9,7 @@
 
 ```bash
 python3 ./genInputs.py
-latex -pdflatex=xelatex -pdf ./BookList.tex
+latexmk -pdflatex=xelatex -pdf ./BookList.tex
 ```
 
 ## 格式要求
